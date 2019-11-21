@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"povs_4\startup_stm32f103x6.o"
+"povs_4\main.o"
+"povs_4\stm32f1xx_it.o"
+"povs_4\stm32f1xx_hal_msp.o"
+"povs_4\stm32f1xx_hal_gpio_ex.o"
+"povs_4\stm32f1xx_hal_tim.o"
+"povs_4\stm32f1xx_hal_tim_ex.o"
+"povs_4\stm32f1xx_hal_uart.o"
+"povs_4\stm32f1xx_hal.o"
+"povs_4\stm32f1xx_hal_rcc.o"
+"povs_4\stm32f1xx_hal_rcc_ex.o"
+"povs_4\stm32f1xx_hal_gpio.o"
+"povs_4\stm32f1xx_hal_dma.o"
+"povs_4\stm32f1xx_hal_cortex.o"
+"povs_4\stm32f1xx_hal_pwr.o"
+"povs_4\stm32f1xx_hal_flash.o"
+"povs_4\stm32f1xx_hal_flash_ex.o"
+"povs_4\stm32f1xx_hal_exti.o"
+"povs_4\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "POVS_4\POVS_4.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "POVS_4.map" -o POVS_4\POVS_4.axf
